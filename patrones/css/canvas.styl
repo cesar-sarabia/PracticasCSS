@@ -1,0 +1,93 @@
+@import "nib"
+verde_A = #97C335
+gris_B = #141F23
+gris_c = #0E0F0F
+
+.canvas
+  position relative
+  overflow hidden
+  &-main
+    padding 10px 0
+  &-sideBar
+    position absolute
+    right -200px
+    top 0
+    color blue
+    width 200px
+    transition 1s
+  &.is-active
+    right 0
+
+.header
+  background #141F23
+  padding 10px
+  color white
+  position relative
+  height 30px
+  line-height 10px
+  &-logo
+      font-size 18px
+      font-weight normal
+      margin 0
+      text-decoration underline
+      text-shadow 0 0 10px verde_A
+      text-transform uppercase
+  &-button
+      background orange
+      color white
+      padding 10px 0
+      border-radiux 10px
+      border none
+      position absolute
+      right 20px
+      top 10px
+      display none
+      &.is-active
+        display block
+.mainMenu
+    background gris_B
+    position absolute
+    left -200px
+    margin 0
+    padding 0
+    top 0
+    width 200px
+    transition 0.3s
+    &.is-active
+        left 0
+    &-item
+        text-align center
+        height 45px
+        line-height 45px
+        list-style none
+        transition 0.3s
+        &:hover
+            background gris_c
+    &-link
+        text-decoration none
+        text-transform uppercase
+        font-size 15px
+        color white
+        display block
+        text-align justify
+        
+@media screen and (min-width: 767px)
+  .header
+    &-button
+      display none
+  .mainMenu
+    left initial
+    right 0
+    width auto
+    &-item
+      display inline-block
+    &-link
+      padding 0
+  .canvas
+    &-sideBar
+      display none;
+      
+    
+    
+    
+  
