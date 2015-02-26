@@ -1,0 +1,73 @@
+<html>
+<style>
+	.spin{
+	
+		border-style: solid;
+    	border-width: 1px;
+    	display: block;
+    	width: 100px;
+    	height: 100px;
+    	background-color: #0000FF;
+		-webkit-transition:-webkit-transform 0.5s ease;
+	}	
+	.spin:hover{
+		-webkit-transform: rotate(360deg) scale(0.5, 0.5);
+	}
+
+	.dos{
+		border-style: solid;
+    	border-width: 1px;
+    	display: block;
+    	width: 100px;
+    	height: 100px;
+    	background-color: green;
+		-webkit-transform: -webkit-transition 0.5s ease;
+	}
+	.dos:hover{
+		-webkit-transition: rotate scale(50%);
+	}
+
+	.tres{
+		border-style: solid;
+    	border-width: 1px;
+    	display: block;
+    	width: 100px;
+    	height: 100px;
+    	background-color: yellow;		
+		-webkit-transition:-webkit-transform 0.5s ease;
+	}
+	.tres:hover
+	{
+		-webkit-transform:rotate(360deg) scale(50%);
+	}
+	.cuatro:hover{
+		border-style: solid;
+    	border-width: 1px;
+    	display: block;
+    	width: 100px;
+    	height: 100px;
+    	background-color: red;		
+		-webkit-transition: -webkit-transform 0.5s ease;
+		-webkit-transform: rotate(360deg) scale(0.5, 0.5);
+	}
+</style>
+	<body>
+		<pre>
+			<script type="text/javascript" src="program.js"></script>
+		</pre>
+
+		<div class="spin">
+			Esto es un div
+		</div>
+		<div class="dos">
+			Esto es un div
+		</div>
+		<div class="tres">
+			Esto es un div
+		</div>
+		<div class="cuatro">
+			Esto es un div
+		</div>
+
+	</body>
+</html>
