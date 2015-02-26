@@ -1,0 +1,90 @@
+@import "icons/icons.styl"
+a
+	text-decoration none
+
+font
+	color green
+	font-size 16px
+figure
+	margin 0
+
+
+color_dark=#0288D1
+color_suave=#03A9F4
+color_texto=#212121
+color_icons=#FFFFFF
+
+.activities
+	color color_texto
+	font-size 1.5em
+	line-height 1.5em
+	margin 0.5em 0.5em
+	display block
+	
+.footer
+	overflow hidden
+	position relative
+.item 
+	list-style none
+	
+	
+.info
+	overflow hidden
+	position relative
+.image
+	display inline-block
+.modulo-a
+	float left
+	width 23%
+	background color_suave
+.modulo-b
+	float left
+	width 70%
+	background color_dark
+	&:before
+		content ""
+		position absolute
+		top 0
+		bottom 0
+		z-index -1
+		background color_dark
+		width 100%
+.modulo-c
+	background #512DA8
+	float left
+	width 23%
+	.item 
+		padding 0
+	&:before
+		background #512DA8
+		bottom 0
+		content ""
+		position absolute
+		top 0
+		width 100%		
+		z-index -1
+
+.modulo-d
+	background #673AB7
+	float left
+	width 70%
+	&:before
+		position absolute
+		top 0
+		bottom 0
+		width 100%
+		z-index -1
+		content ""
+		background #673AB7 
+.name
+	color color_texto
+	font-size 2em
+	padding 1em 0.5em
+	text-align center
+.portrait
+	margin 1em 0.5em
+.symbol
+	color color_icons	
+		
+
+	
