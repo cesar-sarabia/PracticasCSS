@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="tienda">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+	<title>CelesteNivelaShooping</title>
+	<link rel="stylesheet" href="css/normalize.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap-theme.min.css">
+	<link rel="stylesheet" href="css/celeste.css">
+
+
+</head>
+<body ng-controller="tiendaController">
+	<div class="icon-twitter">twitter</div>
+	<div id="background_wrap"></div>
+	<div class="container header-wrapper">
+		<a href="#" class="menu-toggle">
+			<p class="menu-trigger">
+				<button type="button">
+					<span></span>
+					<span></span>
+					<span></span>
+				</button>
+			</p>
+			<i class="icon-cancel"></i>
+		</a>
+		<a href="" class="brand-on-mobile" title="Celeste">
+			<i class="icon-logo"></i>
+		</a>
+		<nav class="navbar navbar-default" role="navigation">
+			<a href="" class="navbar-brand">
+				<i class="icon-logo">OVER</i>
+			</a>
+
+			<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+				<ul id="menu-main" class="nav navbar-nav">
+					<li id="menu-item-223" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-223">
+						<a href="" title="Home">Home</a>
+					</li>
+					<li id="menu-item-1310" class="menu-item menu-item-type-post_type menu-item-object-page current-menu-item menu-item-1214">
+						<a href="" title="Casual">Casual</a>
+					</li>
+				</ul> 
+				
+			</div>
+			
+		</nav>
+
+	</div>
+
+		<div class="row">
+			<div class="medium col-sm-6 col-xm-12 catalogo-item">
+				<ul>
+					<li ng-repeat="articulo in catalogo">
+						<div class="item">
+
+							<div class="info">
+								<div class="info-price">
+									<span class="info-currency">{{articulo.currency}}</span>
+									<span class="info-number">{{articulo.number}}</span>
+								</div>
+							</div>
+
+							<figure class="item-figure width=376px height=376px">
+								<img ng-src="{{articulo.url}}" alt="{{articulo.name}}" class="item-figure-image">
+							</figure>
+							
+						<a href="" class="info-details">
+							<span>View Details</span>
+						</a>
+						</div>
+
+					</li>
+				</ul>
+				
+				
+			</div>
+		</div>
+	</div>
+
+	<script src="http://code.jquery.com/jquery.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
+	<script src="js/lib/angular.min.js"></script>
+	<script src="js/controller.js"></script>
+	
+</body>
+</html>
