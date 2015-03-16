@@ -1,0 +1,14 @@
+ul.table {
+    display: table;
+}
+ul.table > li {
+    display: table-cell;
+}
+.centered ul.table > li {
+    padding-left: 1em;
+    padding-right: 1em;    
+}
+ul.table.evento {
+    width: 100%;
+    table-layout: fixed;
+}

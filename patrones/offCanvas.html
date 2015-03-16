@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Off Canvas pattern</title>
+	<meta name="viewport" content="width=device-width, user-scalable=no">
+	<link rel="stylesheet" href="css/base.css">
+	<link rel="stylesheet" href="css/canvas.css">
+</head>
+<body>
+	<section class="canvas">
+		<header class="header verde_A is-active">
+			<h1 class="header-logo">Off Canvas</h1>
+			<button id="showMenu" class="header-button is-active">Mostrar menu</button>
+			<button id="hideMenu"class="header-button">Ocultar menu</button>
+			<ul id="menu" class="mainMenu">
+				<li class="mainMenu-item">
+					<a href="#" class="mainMenu-link">Eventos</a>
+				</li>
+				<li class="mainMenu-item">
+					<a href="#" class="mainMenu-link">Experiencia</a>
+				</li>
+				<li class="mainMenu-item">
+					<a href="#" class="mainMenu-link">Cursos</a>
+				</li>
+				<li class="mainMenu-item">
+					<a href="#" class="mainMenu-link">Certificaciones</a>
+				</li>
+				<li class="mainMenu-item">
+					<a href="#" class="mainMenu-link">Certificaciones</a>
+				</li>
+				<li class="mainMenu-item">
+					<a href="#" class="mainMenu-link">Certificaciones</a>
+				</li>
+				<li class="mainMenu-item">
+					<a href="#" class="mainMenu-link">Certificaciones</a>
+				</li>
+				<li class="mainMenu-item">
+					<a href="#" class="mainMenu-link">Certificaciones</a>
+				</li>
+			</ul>
+		</header>
+		<div class="canvas-main verde_B">
+			Lorem ipsum dolor sit amet, consectetur adipisicing elit. Libero fugit est inventore earum omnis minus ad in modi labore saepe optio, quo maxime facere ullam aperiam quasi maiores expedita, iste.
+			Lorem ipsum dolor sit amet, consectetur adipisicing elit. Natus eos excepturi est. Deleniti itaque est laudantium quia nihil rem? Doloremque culpa eum architecto incidunt voluptatibus accusamus quisquam ut! Officia, ea!
+			Lorem ipsum dolor sit amet, consectetur adipisicing elit. Temporibus maxime alias facilis perspiciatis dolor, saepe repellendus, quae aliquam? Modi sapiente blanditiis, aut perferendis dolores ullam voluptatem eos necessitatibus tempora animi!
+
+			Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quia eligendi optio facilis sed, provident necessitatibus quidem reiciendis consectetur laudantium harum rerum ab saepe nam facere ducimus minus ut iusto consequuntur.
+		</div>
+		<div class="canvas-sideBar verde_C">
+			Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corporis libero, beatae, voluptatem vero quaerat dolore nesciunt quasi voluptate nihil enim reprehenderit voluptatum. Odit ex architecto est ut quaerat. Molestiae, accusamus.
+		</div>
+	</section>
+	<script src="hammer.min.js"></script>
+	<script>
+		var $buttonShowMenu = document.getElementById("showMenu");
+		var $buttonHideMenu =document.getElementById("hideMenu");
+		var $menu = document.getElementById("menu");
+		var $body= document.querySelector('body');
+		var body = new Hammer($body);
+
+
+		var showMenu = function(){
+			$buttonShowMenu.classList.remove('is-active');
+			$buttonHideMenu.classList.add('is-active');
+			$menu.classList.add('is-active');
+		}
+		var hideMenu = function(){
+			$buttonShowMenu.classList.add('is-active');
+			$buttonHideMenu.classList.remove('is-active');
+			$menu.classList.remove('is-active');
+		}
+
+		$buttonShowMenu.addEventListener("click",showMenu);
+		$buttonHideMenu.addEventListener("click",hideMenu);
+
+		body.on('panright', showMenu);
+		body.on('panleft', hideMenu);
+	</script>
+</body>
+</html>

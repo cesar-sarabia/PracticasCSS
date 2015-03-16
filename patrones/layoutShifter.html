@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Layout Shifter</title>
+	<meta name="viewport" content="width=device-width, user-scalable=no">
+	<link rel="stylesheet" href="css/base.css">
+	<style>
+		.shifter{
+			max-width: 1024px;
+			margin: 0 auto;
+		}
+		.shifter-top{
+			margin-bottom: 20px; 
+		}
+		.shifter-bottom{
+			padding: 20px 0;
+			overflow: hidden;
+		}
+		.shifter-column{
+			width: 50%;
+			float: left;
+		}
+		@media screen and (max-width: 1024px){
+			.shifter{
+				max-width: 900px;
+			}
+		}
+
+		@media screen and (max-width: 768px){
+			.shifter{
+				max-width: 500px;
+			}
+		}		
+		@media screen and (max-width: 767px){
+			.shifter{
+				max-width: 400px;
+			}
+		}
+
+	</style>
+</head>
+<body>
+	<section class="shifter">
+		<h1>Layout Shifter</h1>
+		<div class="shifter-top verde_A">
+			Lorem ipsum dolor sit amet, consectetur adipisicing elit. Numquam ea deserunt alias aperiam possimus, labore. Amet est nesciunt maxime ad, adipisci facilis, porro unde suscipit, iusto a velit quaerat corporis.
+		</div>
+		<div class="shifter-bottom verde_B">
+			<div class="shifter-column verde_A">
+				Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel harum quasi, possimus delectus ipsam veniam neque aperiam! A nobis, aperiam sapiente molestiae alias, ab? Excepturi nostrum sapiente culpa perferendis, ea.
+			</div>
+			<div class="shifter-column verde_C">
+				Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolor placeat, eos exercitationem, delectus aliquam, quidem magnam numquam maxime libero vitae laudantium doloribus atque quis? Repellendus deserunt quasi veniam repudiandae vitae?
+			</div>
+		</div>
+	</section>
+	
+</body>
+</html>
