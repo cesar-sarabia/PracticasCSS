@@ -1,0 +1,26 @@
+
+.flex{
+	display: -webkit-flex;
+}
+.flex >*{
+	
+	min-height: 100px;
+	width: 200px;
+	-webkit-flex-grow:1;
+	-webkit-flex-shrink:1;
+	-webkit-flex-basics:auto;
+}
+.flex > header{
+	background: #FF34DD;
+	-webkit-flex-grow:5;
+
+}
+.flex > article{
+	background: #FFCCEE;
+}
+.flex > aside{
+	background: #FFAADD;
+}
+.flex > footer{
+	background: #FF34AA;
+}
