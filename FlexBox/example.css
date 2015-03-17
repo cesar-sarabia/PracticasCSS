@@ -8,11 +8,11 @@
 	width: 200px;
 	-webkit-flex-grow:1;
 	-webkit-flex-shrink:1;
-	-webkit-flex-basics:auto;
+	-webkit-flex-basis:auto;
 }
 .flex > header{
 	background: #FF34DD;
-	-webkit-flex-grow:5;
+	-webkit-flex-grow:3;
 
 }
 .flex > article{
@@ -24,3 +24,4 @@
 .flex > footer{
 	background: #FF34AA;
 }
+

@@ -1,0 +1,43 @@
+header{
+	background: #FF34DD;
+	height: 100px;
+}
+ article{
+	background: #FFCCEE;
+}
+ aside{
+	background: #FFAADD;
+}
+ footer{
+	background: #FF34AA;
+	height: 100px;
+}
+
+
+.middle{
+	display: -webkit-flex;
+	-webkit-flex-flow:row;
+	min-height: 100px;
+
+}
+
+article p{
+	background: purple;
+	margin: 1px;
+	width: 90px;
+	height: 50px;
+}
+
+
+article {
+	-webkit-flex: 3 0 0;
+	display: flex;
+	-webkit-flex-flow:row;
+	-webkit-flex-wrap:wrap;
+	
+	
+
+}
+aside{
+	-webkit-flex: 1 0 0;
+}
