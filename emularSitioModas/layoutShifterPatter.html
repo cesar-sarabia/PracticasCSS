@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>modas replica</title>
+	<meta name="description" content="practica el patron layout shifter, combinado con display flexbox, mobile first"/>
+	<meta name="viewport" content="width=device-width maximum-scale=1, initial-scale=1, user-scalable=no"/>
+	<link rel="stylesheet" href="css/normalize.css">
+	<link rel="stylesheet" href="css/replica.css">
+
+</head>
+<body ng-app="tienda">
+	<header></header>
+	<section class="flex-container" ng-controller="tiendaController">
+		
+		<div class="interno">
+			<div class="elementos" ng-repeat="articulo in catalogo">				
+				<article>
+					<figure class="imagen">
+						<img ng-src="{{articulo.url}}" alt="{{articulo.name}}" class="item-figure-image">
+					</figure>
+					<div class="description">
+						<p>view</p>
+					</div>
+				</article>			
+			</div>
+		</div>
+
+		<aside class="lateral"><p>lateral</p></aside>
+	
+
+</section>
+
+<footer></footer>
+
+
+<script src="http://code.jquery.com/jquery.js"></script>
+<script src="js/lib/angular.min.js"></script>
+<script src="js/controller.js"></script>
+</body>
+</html>
